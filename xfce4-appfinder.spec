@@ -12,6 +12,7 @@ BuildRequires:	dbh-devel
 BuildRequires:	imagemagick
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	desktop-file-utils
+Obsoletes:	xfce-appfinder
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
