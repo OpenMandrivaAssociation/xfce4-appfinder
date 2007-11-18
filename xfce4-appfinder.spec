@@ -1,14 +1,14 @@
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
-Version:	4.4.1
-Release:	%mkrel 6
+Version:	4.4.2
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
 Source0:	xfce4-appfinder-%{version}.tar.bz2
 Patch0:		%{name}-4.4.1-incremental-search.patch
-BuildRequires:	xfce-mcs-manager-devel >= %{version} 
-BuildRequires:	dbh-devel 
+BuildRequires:	xfce-mcs-manager-devel >= %{version}
+BuildRequires:	dbh-devel
 BuildRequires:	imagemagick
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	desktop-file-utils
@@ -16,7 +16,7 @@ Obsoletes:	xfce-appfinder
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-Xfce Appfinder is an useful software that permits you to find 
+Xfce Appfinder is an useful software that permits you to find
 every application in the system supporting Desktop entry format.
 
 %prep
@@ -30,7 +30,7 @@ every application in the system supporting Desktop entry format.
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std  
+%makeinstall_std
 
 mkdir -p %{buildroot}%{_iconsdir}/hicolor/{32x32,16x16}/apps
 convert src/%{name}.png -geometry 32x32 %{buildroot}%{_iconsdir}/hicolor/32x32/apps/%{name}.png
@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
-%doc README ChangeLog INSTALL COPYING AUTHORS 
+%doc README ChangeLog INSTALL COPYING AUTHORS
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/xfce4/*
