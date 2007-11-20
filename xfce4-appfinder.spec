@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
-%doc README ChangeLog INSTALL COPYING AUTHORS
+%doc README ChangeLog AUTHORS
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/xfce4/*
