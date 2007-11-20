@@ -1,14 +1,13 @@
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
 Version:	4.4.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
 Source0:	xfce4-appfinder-%{version}.tar.bz2
 Patch0:		%{name}-4.4.1-incremental-search.patch
-BuildRequires:	xfce-mcs-manager-devel >= %{version}
-BuildRequires:	dbh-devel
+BuildRequires:	libxfcegui4-devel >= %{version}
 BuildRequires:	imagemagick
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	desktop-file-utils
@@ -16,7 +15,7 @@ Obsoletes:	xfce-appfinder
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-Xfce Appfinder is an useful software that permits you to find
+Xfce appfinder is an useful software that permits you to find
 every application in the system supporting Desktop entry format.
 
 %prep
@@ -39,7 +38,6 @@ convert src/%{name}.png -geometry 16x16 %{buildroot}%{_iconsdir}/hicolor/16x16/a
 desktop-file-install \
   --remove-category="Application" \
   --remove-category="X-FACE" \
-  --add-category="Filesystem" \
   --add-only-show-in="XFCE" \
   --dir %{buildroot}%{_datadir}/applications %{buildroot}%{_datadir}/applications/*
 
