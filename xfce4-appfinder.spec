@@ -1,12 +1,13 @@
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
 Version:	4.4.2
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
 Source0:	xfce4-appfinder-%{version}.tar.bz2
 Patch0:		%{name}-4.4.1-incremental-search.patch
+Patch1:		00_enable-label-word-wrap.patch
 BuildRequires:	libxfcegui4-devel >= %{version}
 BuildRequires:	imagemagick
 BuildRequires:	perl(XML::Parser)
@@ -21,6 +22,7 @@ every application in the system supporting Desktop entry format.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure2_5x \
