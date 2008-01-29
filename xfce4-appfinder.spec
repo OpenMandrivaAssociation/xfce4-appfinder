@@ -22,7 +22,7 @@ every application in the system supporting Desktop entry format.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
+%patch1 -p0
 
 %build
 %configure2_5x \
