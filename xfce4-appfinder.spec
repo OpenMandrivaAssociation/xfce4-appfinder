@@ -1,7 +1,7 @@
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
 Version:	4.4.2
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
@@ -26,7 +26,10 @@ every application in the system supporting Desktop entry format.
 
 %build
 %configure2_5x \
+%if %mdkversion < 200900
 	--sysconfdir=%{_sysconfdir}/X11
+%endif
+
 %make
 
 %install
