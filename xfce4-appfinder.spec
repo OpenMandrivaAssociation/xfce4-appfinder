@@ -1,16 +1,17 @@
+%define url_ver %(echo %{version} | cut -c 1-3)
+
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
-Version:	4.6.2
+Version:	4.7.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
-Source0:	http://www.xfce.org/archive/xfce-%{version}/src/%{name}-%{version}.tar.bz2
-BuildRequires:	libxfcegui4-devel >= 4.6.0
+Source0:	http://archive.xfce.org/src/xfce/xfce4-appfinder/%{url_ver}/%{name}-%{version}.tar.bz2
+BuildRequires:	libxfce4ui-devel >= 4.7.0
 BuildRequires:	perl(XML::Parser)
-BuildRequires:	libxfce4menu-devel >= 4.6.0
-BuildRequires:	xfconf-devel >= 4.6.0
-BuildRequires:	thunar-devel >= 0.9.92
+BuildRequires:	garcon-devel >= 0.1.0
+BuildRequires:	xfconf-devel >= 4.7.0
 BuildRequires:	desktop-file-utils
 Obsoletes:	xfce-appfinder
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
