@@ -41,4 +41,3 @@ desktop-file-install \
 %doc README ChangeLog AUTHORS
 %{_bindir}/*
 %{_datadir}/applications/*
-%{_iconsdir}/hicolor/*/apps/*.png
