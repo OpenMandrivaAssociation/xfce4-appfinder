@@ -2,7 +2,7 @@
 
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
-Version:	4.9.5
+Version:	4.10.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
