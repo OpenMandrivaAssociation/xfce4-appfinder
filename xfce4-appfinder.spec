@@ -8,7 +8,7 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/xfce/xfce4-appfinder/%{url_ver}/%{name}-%{version}.tar.bz2
-BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.10.1
+BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.10.0
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(garcon-1) >= 0.1.11
 BuildRequires:	pkgconfig(libxfconf-0) >= 4.9.0
