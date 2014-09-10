@@ -1,3 +1,4 @@
----
-sources:
+removed_sources:
   xfce4-appfinder-4.10.1.tar.bz2: 5d8295faa8143bcd0b4985eb9f28fdc56d63fce2
+sources:
+  xfce4-appfinder-4.11.0.tar.bz2: a3502733f6de4284fbade581727068c34dd0e551
