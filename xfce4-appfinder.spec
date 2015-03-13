@@ -41,3 +41,4 @@ desktop-file-install \
 %doc README ChangeLog AUTHORS
 %{_bindir}/*
 %{_datadir}/applications/*
+%{_datadir}/appdata/xfce4-appfinder.appdata.xml
