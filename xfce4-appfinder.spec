@@ -2,13 +2,13 @@
 
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
-Version:	4.11.0
-Release:	1
+Version:	4.12.0
+Release:	0.1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/xfce/xfce4-appfinder/%{url_ver}/%{name}-%{version}.tar.bz2
-BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.11
+BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.12
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(garcon-1) >= 0.1.11
 BuildRequires:	pkgconfig(libxfconf-0) >= 4.9.0
@@ -41,3 +41,4 @@ desktop-file-install \
 %doc README ChangeLog AUTHORS
 %{_bindir}/*
 %{_datadir}/applications/*
+%{_datadir}/appdata/xfce4-appfinder.appdata.xml
