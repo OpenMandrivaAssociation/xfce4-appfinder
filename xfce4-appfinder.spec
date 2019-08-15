@@ -8,6 +8,7 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://www.xfce.org
 Source0:	http://archive.xfce.org/src/xfce/xfce4-appfinder/%{url_ver}/%{name}-%{version}.tar.bz2
+BuildRequires:	git-core
 BuildRequires:	pkgconfig(libxfce4ui-1) >= 4.12
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(garcon-1)
@@ -26,7 +27,7 @@ Xfce appfinder is an useful software that permits you to find
 every application in the system supporting Desktop entry format.
 
 %prep
-%setup -q
+%autosetup -p1 -Sgit_am
 
 %build
 %configure
