@@ -51,4 +51,4 @@ desktop-file-install \
 %doc README ChangeLog AUTHORS
 %{_bindir}/*
 %{_datadir}/applications/*
-%{_datadir}/appdata/xfce4-appfinder.appdata.xml
+%{_datadir}/metainfo/org.xfce.xfce4-appfinder.appdata.xml
