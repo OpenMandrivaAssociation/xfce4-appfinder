@@ -1,4 +1,5 @@
 %define url_ver %(echo %{version} | cut -c 1-4)
+%define _disable_rebuild_configure 1
 
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
