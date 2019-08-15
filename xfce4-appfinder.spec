@@ -30,7 +30,8 @@ every application in the system supporting Desktop entry format.
 %autosetup -p1 -Sgit_am
 
 %build
-%configure
+#configure
+NOCONFIGURE=1 xdt-autogen
 %make_build
 
 %install
