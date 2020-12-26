@@ -50,3 +50,6 @@ desktop-file-install \
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/metainfo/org.xfce.xfce4-appfinder.appdata.xml
+%{_iconsdir}/hicolor/*x*/apps/org.xfce.appfinder.png
+%{_iconsdir}/hicolor/scalable/apps/org.xfce.appfinder.svg
+
