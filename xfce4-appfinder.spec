@@ -3,12 +3,12 @@
 
 Summary:	Find every application in the system
 Name:		xfce4-appfinder
-Version:	4.18.1
+Version:	4.20.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		https://www.xfce.org
-Source0:	http://archive.xfce.org/src/xfce/xfce4-appfinder/%{url_ver}/%{name}-%{version}.tar.bz2
+Source0:	https://archive.xfce.org/src/xfce/xfce4-appfinder/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	git-core
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(garcon-1)
