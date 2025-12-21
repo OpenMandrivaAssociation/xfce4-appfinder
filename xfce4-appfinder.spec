@@ -9,6 +9,11 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		https://www.xfce.org
 Source0:	https://archive.xfce.org/src/xfce/xfce4-appfinder/%{url_ver}/%{name}-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	git-core
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(garcon-1)
